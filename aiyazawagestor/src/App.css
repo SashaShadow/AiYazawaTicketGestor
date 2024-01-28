@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+  /* background-image: url("/nanaback.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; */
+  /* Agrega más estilos según sea necesario */
+}
