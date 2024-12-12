@@ -9,10 +9,12 @@ const Login = () => {
 
     const { setUser, setToken } = useContext(Context)
     const [errorAlert, setErrorAlert] = useState(null)
+    const [loader, setLoader] = useState(false)
     const navigate = useNavigate();
 
     const onSubmit = async (e) => {
         e.preventDefault()
+        setLoader(true)
         try {
             const username = e.target.elements.username.value;
             const password = e.target.elements.password.value;
@@ -36,6 +38,7 @@ const Login = () => {
             setErrorAlert(err.toString())
             console.log(err.toString())
         }
+        setLoader(false)
     }
 
     return (
@@ -45,6 +48,13 @@ const Login = () => {
             <>
               <h2 className='blanco'>{errorAlert}</h2>
             </>}
+
+            {loader && 
+            <>
+                <h3 className='Loading'>Cargando...</h3>
+                <span class="loader"></span>
+            </>
+            }
             <div className='ContLogin'>
                 <div className="back">
                     <div className="div-center">

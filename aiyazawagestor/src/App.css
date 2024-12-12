@@ -20,9 +20,9 @@ body {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
   line-height: 1.5em;
-  /* background-image: url("/nanaback.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh; */
-  /* Agrega más estilos según sea necesario */
+}
+
+#logo{
+  width: 300px;
+  position: absolute;
 }

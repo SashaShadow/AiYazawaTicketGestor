@@ -16,7 +16,7 @@ const Navbar = () => {
         </div>
 
         <div>
-          {user ? <h4>{user.username}</h4> 
+          {user ? <h4 className='Username'>{user.username}</h4> 
           : 
           <NavLink className="" to={`/login`}>
             <h4 className='HomeBut'>Login</h4>

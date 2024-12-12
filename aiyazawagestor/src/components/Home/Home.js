@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './Home.css';
 import Validar from '../Validar/Validar.js'
 import CrearEntrada from '../CrearEntrada/CrearEntrada.js'
@@ -6,6 +6,10 @@ import CrearEntrada from '../CrearEntrada/CrearEntrada.js'
 const Home = () => {
 
     const [eleccion, setEleccion] = useState(null)
+
+    useEffect(() => {
+
+    }, [])
 
     return (
         <>
